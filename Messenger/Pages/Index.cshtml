@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div id="join">
+    <label for="inputUser">Пользователь</label>
+    <input type="text" id="inputUser" />
+    <button id="joinButton">Войти</button>
+</div>
+
+<div id="users">
+    <h2>Пользователи</h2>
+    <ul id="userList" style="overflow: auto; width: 200px"></ul>
+</div>
+
+<div id="chat" style="display: none;">
+    <h2 id="chatTitle"></h2>
+
+    <ul id="messagesList" style="list-style: none; padding: 0;"></ul>
+
+    <input type="text" id="messageInput" placeholder="Сообщение" />
+    <button id="sendButton">Отправить</button>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/messenger.js"></script>
