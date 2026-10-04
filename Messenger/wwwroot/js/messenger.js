@@ -3,7 +3,7 @@ let selectedUserId = null;
 let selectedUsername = "";
 let activeMessageId = null;
 let lastUsers = [];
-const chats = {}; // userId -> [{ id, from, text, mine, edited }]
+const chats = {};
 
 document.getElementById("users").style.display = "none";
 document.getElementById("chat").style.display = "none";
